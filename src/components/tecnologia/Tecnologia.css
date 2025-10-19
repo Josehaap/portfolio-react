@@ -1,9 +1,8 @@
 .sectionTech {
     width: max-content;
     padding: 0 10px;
-    height: 40px;
+    height: clamp(2.5vw, 6vh, 20vh);
     border: 3px solid #b8a2d3;
-    /* violeta pastel suave */
     border-radius: 13px;
     display: flex;
     justify-content: space-evenly;
@@ -21,13 +20,14 @@
 }
 
 .sectionTech>img {
-    width: 30px;
-    height: 30px;
+    width: 5vmin;
+    height: 5vmin;
     margin-right: 5px;
     border-radius: 50%;
 }
 
 .sectionTech>a {
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     background: radial-gradient(circle, #b8a2d3, #e9e9e9, #998ff0);
     background-clip: text;
