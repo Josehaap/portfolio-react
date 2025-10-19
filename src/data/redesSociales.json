@@ -1,0 +1,18 @@
+[
+  {
+    "imgPath": "/assets/github-mark-white.svg",
+    "link": "https://github.com/Josehaap",
+    "titulo": "GitHub"
+  },
+  {
+    "imgPath": "/assets/linkedin-logo.webp",
+    "link": "https://www.linkedin.com/in/jose-de-haro-jim%C3%A9nez-1889b8321/",
+    "titulo": "Linkeding"
+  },
+  {
+    "imgPath": "/assets/battlecss-logo.png",
+    "link": "https://cssbattle.dev/player/josehaap",
+    "titulo": "BattleCSS"
+  }
+  
+]

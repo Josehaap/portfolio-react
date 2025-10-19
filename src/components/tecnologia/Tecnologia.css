@@ -1,0 +1,40 @@
+.sectionTech {
+    width: max-content;
+    padding: 0 10px;
+    height: 40px;
+    border: 3px solid #b8a2d3;
+    /* violeta pastel suave */
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(102, 51, 153, 0.2);
+    transition: all 0.3s ease;
+    margin: 5px 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #b8a2d3;
+}
+
+.sectionTech:hover{
+    box-shadow: 0 0 25px rgba(0, 255, 242, 0.452),  inset 0 0 10px rgba(0, 255, 242, 0.452);
+    border: 3px solid rgb(0, 255, 242);
+}
+
+.sectionTech>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.sectionTech>a {
+    text-decoration: none;
+    background: radial-gradient(circle, #b8a2d3, #e9e9e9, #998ff0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sectionTech:hover > a{
+    background: radial-gradient(circle, rgb(0, 255, 242), #e9e9e9, rgba(0, 255, 242, 0.452));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
