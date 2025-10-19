@@ -1,15 +1,20 @@
 @media (375px <=width <=768px) {
     .contenedorLogo{
-        width: 30vmin;
-        height: 30vmin;
-        grid-row: 3;
-        grid-column: 5/7;
+        width: 25vmin;
+        height: 25vmin;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .contenedorLogo>img {
+        opacity: 0;
     }
     .articleHero {
-        grid-column: 1/11;
-        grid-row: 4/5;
+        grid-column: 3/11;
+        grid-row: 2/3;
         text-align: center;
         position: relative;
-
+        padding-right: 20px;
     }
+    
+
 }
