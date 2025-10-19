@@ -1,5 +1,15 @@
 @media (375px <=width <=768px) {
-    .sectionHero {
-        background-color: red;
+    .contenedorLogo{
+        width: 30vmin;
+        height: 30vmin;
+        grid-row: 3;
+        grid-column: 5/7;
+    }
+    .articleHero {
+        grid-column: 1/11;
+        grid-row: 4/5;
+        text-align: center;
+        position: relative;
+
     }
 }
