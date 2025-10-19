@@ -1,0 +1,5 @@
+@media (375px <=width <=768px) {
+    .sectionHero {
+        background-color: red;
+    }
+}

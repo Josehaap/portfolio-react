@@ -1,5 +1,6 @@
 import React from "react";
 import './Hero.css';
+import './responsive.css'; 
 import Tecno from '../tecnologia/Tecnologia';
 
 //Images debería ser un array de rutas. 

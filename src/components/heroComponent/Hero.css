@@ -1,9 +1,11 @@
+@import "./responsive.css";
+
 .sectionHero {
     width: 100vw;
     height: 100vh;
     background-color: var(--background);
     display: grid;
-    gap: 10px;
+    gap: 5%;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
 
@@ -13,9 +15,10 @@
     background: url(../../assets/img/fotoPerfil.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 50vmin;
+    height: 50vmin;
     grid-column: 2/2;
     grid-row: 5;
     position: relative;
@@ -24,8 +27,8 @@
 }
 
 .contenedorLogo>img {
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height: 20%;
     /*Centramos */
     position: absolute;
     top: 50%;
@@ -37,24 +40,24 @@
 
 .contenedorLogo {
     .imageHero-0 {
-        transform: translate(200%, -50%);
+        transform: translate(270%, -50%);
         filter: drop-shadow(0 0 5px rgb(20, 253, 242));
     }
 
     .imageHero-1 {
-        transform: translate(-50%, -300%);
+        transform: translate(-50%, -370%);
         filter: drop-shadow(0 0 5px rgb(255, 143, 79));
 
     }
 
     .imageHero-2 {
-        transform: translate(-300%, -50%);
+        transform: translate(-370%, -50%);
         filter: drop-shadow(0 0 5px rgb(255, 230, 0));
 
     }
 
     .imageHero-3 {
-        transform: translate(-50%, 200%);
+        transform: translate(-50%, 270%);
         filter: drop-shadow(0 0 5px rgb(243, 91, 91));
 
     }
@@ -69,15 +72,14 @@
 }
 
 .articleHero> :nth-child(1) {
-
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     background: linear-gradient(90deg, var(--text), var(--primary));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .articleHero>p:nth-child(2) {
-    font-size: 1.5rem;
+    font-size: clamp(0.75rem, 2.5vw, 1.5rem);
     text-align: center;
     color: var(--text);
 }
@@ -85,16 +87,16 @@
 .articleHero> :nth-child(3) {
     text-align: center;
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: clamp(0.25rem, 1.8vw, 0.8rem);
     color: rgb(216, 216, 216);
 }
 
 .articleHero> :nth-child(4) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 20px;
-  margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    margin: 10px 0;
 }
 
 @keyframes sombreadoParpadeante {
