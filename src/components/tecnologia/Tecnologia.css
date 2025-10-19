@@ -14,14 +14,14 @@
     box-shadow: 0 0 10px #b8a2d3;
 }
 
-.sectionTech:hover{
-    box-shadow: 0 0 25px rgba(0, 255, 242, 0.452),  inset 0 0 10px rgba(0, 255, 242, 0.452);
+.sectionTech:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 242, 0.452), inset 0 0 10px rgba(0, 255, 242, 0.452);
     border: 3px solid rgb(0, 255, 242);
 }
 
 .sectionTech>img {
-    width: 5vmin;
-    height: 5vmin;
+    width: clamp(2vw, 20vw, 4vh);
+    height: clamp(4vh, 1vh, 1vh);
     margin-right: 5px;
     border-radius: 50%;
 }
@@ -33,7 +33,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.sectionTech:hover > a{
+
+.sectionTech:hover>a {
     background: radial-gradient(circle, rgb(0, 255, 242), #e9e9e9, rgba(0, 255, 242, 0.452));
     background-clip: text;
     -webkit-text-fill-color: transparent;
