@@ -1,13 +1,15 @@
 @media (375px <=width <=768px) {
-    .contenedorLogo{
+    .contenedorLogo {
         width: 25vmin;
         height: 25vmin;
         grid-row: 2/3;
         grid-column: 2/3;
     }
+
     .contenedorLogo>img {
         opacity: 0;
     }
+
     .articleHero {
         grid-column: 3/11;
         grid-row: 2/3;
@@ -15,6 +17,11 @@
         position: relative;
         padding-right: 20px;
     }
-    
+
+    .contenedorTecno {
+        position: absolute;
+        width: 170%;
+        transform: translate(-37%, 10px);
+    }
 
 }
