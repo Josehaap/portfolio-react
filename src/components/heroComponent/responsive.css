@@ -4,7 +4,6 @@
         height: 25vmin;
         grid-row: 2/3;
         grid-column: 2/3;
-        background-color: red;
     }
 
     .contenedorLogo>img {
