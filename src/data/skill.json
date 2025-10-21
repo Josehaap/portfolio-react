@@ -1,0 +1,14 @@
+{
+    "Frontend": {
+        "Lenguaje de Marcas":["HTML", "CSS"], 
+        "Lenguajes de programación": ["JavaScript" , "TypeScript"],
+        "Frameworks":["Angular", "React", "Blazor","Gsap", "Tailwind","Boostrap" ]
+    },
+    "Backend": {
+        "Lenguajes de programación": ["C#", "PHP"],
+        "Frameworks":[".NET", "Laravel", "Nodejs", "Expressjs" ],
+        "Bases de Datos": ["MySQL"]
+    }
+}
+
+    

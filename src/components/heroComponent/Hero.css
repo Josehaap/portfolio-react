@@ -3,9 +3,8 @@
 .sectionHero {
     width: 100vw;
     height: 100vh;
-    background-color: var(--background);
     display: grid;
-    gap: 5%;
+    gap: 10px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
 
@@ -17,10 +16,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 50%;
-    width: 50vmin;
-    height: 50vmin;
+    width: 40vmin;
+    height: 40vmin;
     grid-column: 2/2;
-    grid-row: 5;
+    grid-row: 5/5;
     position: relative;
     animation: sombreadoParpadeante 5s ease infinite;
 
@@ -66,9 +65,10 @@
 .articleHero {
     grid-column: 4/10;
     grid-row: 5/6;
-    text-align: left;
-    position: relative;
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .articleHero> :nth-child(1) {
@@ -89,6 +89,7 @@
     margin-top: 10px;
     font-size: clamp(0.6rem, 1.8vw, 0.8rem);
     color: rgb(216, 216, 216);
+    width: 85%;
 }
 
 .articleHero> :nth-child(4) {
@@ -96,7 +97,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px 20px;
-    margin: 10px 0;
+    margin: 50px 0;
 }
 
 @keyframes sombreadoParpadeante {

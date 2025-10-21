@@ -1,6 +1,6 @@
 :root{
   --text: #ece9f1;
-  --background: #09060c;
+  --background: #17101f;
   --primary: #b8a2d3;
   --secondary: #503178;
   --accent: #9163ca;
@@ -11,7 +11,8 @@
 }
 body{
   height: 100vh;
-  background-color: #161513;
   color: white;
   font-family: 'Monocraft', monospace;
+  overflow-x: hidden;
+
 }

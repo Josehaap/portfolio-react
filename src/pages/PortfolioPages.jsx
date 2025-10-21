@@ -1,5 +1,5 @@
 import React from "react";
-
+import './PortfolioPages.css';
 import Hero from '../components/heroComponent/Hero';
 import css from "../assets/img/lenguajes_marcas/css.png";
 import html from "../assets/img/lenguajes_marcas/html-5.png";
