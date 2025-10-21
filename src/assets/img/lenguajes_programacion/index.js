@@ -1,2 +1,3 @@
 import js from './js.png';
-export { js };
+import php from './php.png';
+export { js, php };

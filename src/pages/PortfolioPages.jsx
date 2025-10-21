@@ -5,19 +5,20 @@ import './PortfolioPages.css';
 /*Importación de los componenentes */
 import Hero from '../components/heroComponent/Hero.jsx'
 /*-------------------------------------- */
+
 /*Importación de información en json */
 import redesSociales from '../data/redesSociales.json';
 /*-------------------------------------- */
 /*Importación de información  */
-import { imagesLenguajeDeMarca, imagesLenguajeDeProgramacion, imagesFrameWorks } from '../assets/import.js'; 
-const { html, css } = imagesLenguajeDeMarca;
-const { js, } = imagesLenguajeDeProgramacion;
-const { angular, } = imagesFrameWorks;
+import{ arrLenguajeDeMarca, arrLenguajeDeProgramacion, arrFrameWorks } from '../assets/import.js'; 
+const [html, css] = arrLenguajeDeMarca;
+const [js] = arrLenguajeDeProgramacion;
+const [angular] = arrFrameWorks;
 /*-------------------------------------- */
 
 const Portfolio =   () =>{
   return (
-      <Hero titulo={"Jose de Haro Jiménez"}  images={[css , html, js, angular]} descripcion={"jdjwbedjwd"} tecnologiasInfo={redesSociales}></Hero>
+      <Hero titulo={"Jose de Haro Jiménez"}  images={[ html,css , js, angular]} descripcion={"jdjwbedjwd"} tecnologiasInfo={redesSociales}></Hero>
   );
 }
 
