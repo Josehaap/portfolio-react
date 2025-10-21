@@ -1,16 +1,23 @@
 import React from "react";
+/*Importación de las hojas de estilos */
 import './PortfolioPages.css';
-import Hero from '../components/heroComponent/Hero';
-import BackGround from '../components/Background/Background';
-import css from "../assets/img/lenguajes_marcas/css.png";
-import html from "../assets/img/lenguajes_marcas/html-5.png";
-import js from "../assets/img/lenguajes_programacion/js.png";
-import angular from "../assets/img/framewroks_librerias/angular.png";
+/*-------------------------------------- */
+/*Importación de los componenentes */
+import Hero from '../components/heroComponent/Hero.jsx'
+/*-------------------------------------- */
+/*Importación de información en json */
 import redesSociales from '../data/redesSociales.json';
+/*-------------------------------------- */
+/*Importación de información  */
+import { imagesLenguajeDeMarca, imagesLenguajeDeProgramacion, imagesFrameWorks } from '../assets/import.js'; 
+const { html, css } = imagesLenguajeDeMarca;
+const { js, } = imagesLenguajeDeProgramacion;
+const { angular, } = imagesFrameWorks;
+/*-------------------------------------- */
 
 const Portfolio =   () =>{
   return (
-      <Hero titulo={"Jose de Haro Jiménez"}  images={[css,html,js, angular]} descripcion={"jdjwbedjwd"} tecnologiasInfo={redesSociales}></Hero>
+      <Hero titulo={"Jose de Haro Jiménez"}  images={[css , html, js, angular]} descripcion={"jdjwbedjwd"} tecnologiasInfo={redesSociales}></Hero>
   );
 }
 
