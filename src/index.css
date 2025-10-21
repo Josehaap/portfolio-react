@@ -1,18 +1,20 @@
-:root{
+:root {
   --text: #ece9f1;
   --background: #17101f;
   --primary: #b8a2d3;
   --secondary: #503178;
   --accent: #9163ca;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   height: 100vh;
   color: white;
   font-family: 'Monocraft', monospace;
   overflow-x: hidden;
-
+  background-color: var(--background);
 }
