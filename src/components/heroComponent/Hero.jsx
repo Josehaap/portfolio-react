@@ -4,7 +4,7 @@ import './responsive.css';
 import Tecno from '../tecnologia/Tecnologia';
 
 //Images debería ser un array de rutas. 
-const Hero = ({images, titulo, subtitulo, descripcion, tecnologiasInfo}) => {
+const Hero = ({images, titulo, subtitulo, descripcion, tecnologiasInfo , bool = false}) => {
     /*Voy a mapear el array de rutaw a un array de elementos para luego devolverlo */
   return(
     <>
@@ -24,7 +24,8 @@ const Hero = ({images, titulo, subtitulo, descripcion, tecnologiasInfo}) => {
                 }
               </div>
             </article>
-           
+                {bool ?<span className="scroll">{">>"}</span>: <></> }
+                
         </section>
     </>
     

@@ -1,13 +1,32 @@
 @import "./responsive.css";
 
 .sectionHero {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
+    margin: auto;
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-template-rows: repeat(10, minmax(0, 1fr));
+    box-shadow: 0 0 50px 25px var(--secondary);
+    border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    animation:  borderRotate 9s ease infinite;
+}
+@keyframes borderRotate {
+    0%{
+        border-radius:  40% 60% 30% 70% / 60% 30% 70% 40%;
+    }
+    25%{
+        border-radius: 70% 40% 60% 30% / 40% 60% 30% 70%;
+    }
+    50%{
+         border-radius:  30% 70% 40% 60% / 70% 40% 60% 30%;}
+    75%{
+       border-radius:  60% 30% 70% 40% / 30% 70% 40% 60%;
+    }
+    100%{
+       border-radius:  40% 60% 30% 70% / 60% 30% 70% 40%;
+    }   
 }
 
 .contenedorLogo {
@@ -19,7 +38,7 @@
     width: 40vmin;
     height: 40vmin;
     grid-column: 2/4;
-    grid-row: 5/5;
+    grid-row: 4/4;
     position: relative;
     animation: sombreadoParpadeante 5s ease infinite;
 
@@ -63,8 +82,8 @@
 }
 
 .articleHero {
-    grid-column: 4/10;
-    grid-row: 5/6;
+    grid-column: 5/11;
+    grid-row: 4/4;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -73,7 +92,7 @@
 
 .articleHero> :nth-child(1) {
     font-size: clamp(1.5rem, 5vw, 3rem);
-    background: linear-gradient(90deg, var(--text), var(--primary));
+    background: radial-gradient(circle, var(--secondary), #000000, #4638c1);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -86,8 +105,8 @@
 
 .articleHero> :nth-child(3) {
     text-align: center;
-    margin-top: 10px;
-    font-size: clamp(0.6rem, 1.8vw, 0.8rem);
+    margin-top: 15px;
+    font-size: clamp(0.6rem, 1.9vw, 1.2rem);
     color: rgb(216, 216, 216);
     width: 85%;
 }
@@ -97,19 +116,62 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px 20px;
-    margin: 50px 0;
+    margin: 25px 0;
+}
+
+.scroll {
+    text-shadow: 0 0 20px white;
+    color: rgb(0, 255, 242);
+    text-align: center;
+    font-size: 3rem;
+    transform: rotate(90deg);
+    grid-row: 8;
+    grid-column: 8;
+    animation: scrollLamada 4s ease infinite;
+    width: 40px;
+    height: 50px;
+}
+
+@keyframes width {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        width: 80vw;
+        height: 100vh;
+        opacity: 1;
+
+    }
+
+   
 }
 
 @keyframes sombreadoParpadeante {
     0% {
-        box-shadow: 0 0 0 0.5px var(--primary), 0 0 10px var(--primary);
+        box-shadow: 0 0 0 0.5px var(--background), 0 0 10px var(--background);
     }
 
     50% {
-        box-shadow: 0 0 0 0.5px var(--primary), 0 0 30px var(--primary);
+        box-shadow: 0 0 0 0.5px var(--background), 0 0 30px var(--background);
     }
 
     100% {
-        box-shadow: 0 0 0 0.5px var(--primary), 0 0 10px var(--primary);
+        box-shadow: 0 0 0 0.5px var(--background), 0 0 10px var(--background    );
+    }
+}
+
+@keyframes scrollLamada {
+    0% {
+        transform: rotate(90deg) translateX(0px);
+    }
+
+    50% {
+        transform: rotate(90deg) translateX(200px);
+    }
+
+    100% {
+        transform: rotate(90deg) translateX(0px);
     }
 }
