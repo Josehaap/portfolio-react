@@ -21,8 +21,8 @@ const SectionCard = ({ infoCard }) => {
 
 const Card = ({ objectLiteral }) => {
   return (
-    <section className="card">
-      <iframe src={objectLiteral.links.web} title={objectLiteral.nombre} className="iframeProyecto" />
+    <section className={`card ${objectLiteral.fullwidth ? "cardFullwidth" : ""}`}>
+      <iframe src={objectLiteral.links.web} title={objectLiteral.nombre} className="iframeProyecto"  />
       <div className="informacionProyecto">
         <h1>{objectLiteral.nombre}</h1>
         {objectLiteral.endesarrollo ? <span className="desarrollo">En desarrollo</span> : <span className="completado">Completado</span>}

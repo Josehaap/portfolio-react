@@ -1,0 +1,30 @@
+/*Definoi la propiedad angulo para hacerla una apropiedad modificable que e sirve en animacion*/
+@property --angulo{
+    syntax: "<angle>"; /*Indicamos que va a recibir*/
+    initial-value: 0deg;
+    inherits: false; /*Para que no herede del pafdre ningún valor*/
+}
+@property --color{
+    syntax: "<color>"; /*Indicamos que va a recibir*/
+    initial-value:  #9163ca;
+    inherits: false; /*Para que no herede del pafdre ningún valor*/
+}
+
+@keyframes rotation {
+    0%{
+        --angulo:0deg;
+    }
+    15%{
+        --color:yellow;
+    }
+    30%{
+        --color:blue;
+    }
+    45%{
+        --color:purple;
+    }
+    to{
+        --angulo:360deg;
+    }
+    
+}
