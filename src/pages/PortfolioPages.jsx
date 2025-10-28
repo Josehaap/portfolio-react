@@ -5,6 +5,7 @@ import './PortfolioPages.css';
 /*Importación de los componenentes */
 import Hero from '../components/heroComponent/Hero.jsx'
 import SectionCard from '../components/Card/Card.jsx'
+import Element3D from '../components/3d/Element3d.jsx'
 /*-------------------------------------- */
 
 /*Importación de información en json */
@@ -24,6 +25,8 @@ const Portfolio =   () =>{
     <>
          <Hero titulo={infoPersonalData.nombre}  subtitulo={infoPersonalData.subtitulo} images={[ html,css , js, angular]} descripcion={infoPersonalData.descripcion} tecnologiasInfo={redesSociales} bool={true}></Hero>
          <SectionCard infoCard={infoWebsData}></SectionCard>
+         <Element3D tip="cubo"></Element3D>
+
     </>
    
   );

@@ -1,13 +1,13 @@
 @import './allAnimatonIn.css';
 
 h1.sectionCard {
-  text-align: center;
+  text-align: left;
   color: transparent;
-  font-size: 6rem;
-  background: linear-gradient(0deg, white, var(--accent));
+  font-size: 4rem;
+  background: linear-gradient(10deg, white, var(--accent));
   background-clip: text;
   width: min-content;
-  margin: auto;
+  margin: 20px  10vw;
 }
 
 .sectionAllcard {
@@ -73,6 +73,7 @@ section.card>.iframeProyecto {
   border-start-start-radius: inherit;
   border-start-end-radius: inherit;
   border: none;
+  background-color: #222;
 
 }
 
@@ -80,10 +81,11 @@ section.card>.iframeProyecto {
 
 .informacionProyecto {
   padding: 1rem 1.5rem;
+
   position: relative;
   flex-grow: 1;
   user-select: none;
-  background-color: #222;
+  background-color: inherit;
   border-end-start-radius: inherit;
   border-end-end-radius: inherit;
 }
@@ -152,22 +154,27 @@ span.completado {
   font-size: 1rem;
   color: #ccc;
 }
+
 section.cardFullwidth {
   width: 1000px;
   display: flex;
   flex-direction: row;
-  
+
 }
 
 
 section.cardFullwidth>.iframeProyecto {
-  width: 5000px;
-  height: 800px;
+  width: 50%;
+  height: 100%;
   zoom: 0.3;
   border-radius: inherit;
 
 }
 
-section.cardFullwidth > .informacionProyecto{
-  border-radius: inherit ;
+section.cardFullwidth>.informacionProyecto {
+  width: 50%;
+}
+
+section.cardFullwidth>.informacionProyecto {
+  border-radius: inherit;
 }

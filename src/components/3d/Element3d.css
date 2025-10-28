@@ -1,0 +1,8 @@
+.contenedorCubo {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  perspective: 1000px; /* perspectiva para el 3D */
+}
+

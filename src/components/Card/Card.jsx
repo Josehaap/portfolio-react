@@ -4,7 +4,7 @@ import './Card.css';
 const SectionCard = ({ infoCard }) => {
   return (
     <>
-      <h1 className="sectionCard">Proyectos</h1>
+      <h1 className="sectionCard">{"<Proyectos>"}</h1>
 
     <section className="sectionAllcard">
         {
@@ -14,6 +14,7 @@ const SectionCard = ({ infoCard }) => {
         ))
       }
     </section>
+      <h1 className="sectionCard">{"</Proyectos>"}</h1>
       
     </>
   );

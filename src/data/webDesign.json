@@ -1,26 +1,46 @@
- [
-    {
-      "nombre": "SpartaGym",
-      "links": {
-        "web": "https://gym-sparta-com.onrender.com",
-        "github": "https://github.com/usuario/spartagym"
-      },
-      "tecnologias": ["/assets/img/lenguajes_marcas/html-5.png","/assets/img/lenguajes_marcas/css.png"],
-      "descripcion": "Pequeña landing page sobre un gimnasio. Este fue uno de mis primeros proyectos que no lo he terminado por falta de tiempo.",
-      "endesarrollo" : true,
-      "fullwidth":false
+[
+  {
+    "nombre": "SpartaGym",
+    "links": {
+      "web": "https://gym-sparta-com.onrender.com",
+      "github": "https://github.com/usuario/spartagym"
     },
-    
-    {
-      "nombre": "Login",
-      "links": {
-        "web": "https://first-login.onrender.com",
-        "github": "https://github.com/usuario/spartagym"
-      },
-      "tecnologias": ["/assets/img/lenguajes_marcas/html-5.png","/assets/img/lenguajes_marcas/css.png","/assets/img/lenguajes_programacion/php.png" ],
-      "descripcion": "Pequeño proyecto que hemos realizado en clase donde he querido darle un toque de diseño, se basa en el envio de información de un login con php puro. Recomiendo entrar directamente porque el login desde el iframe no funciona por temas de seguridad",
-      "endesarrollo" : true,
-      "fullwidth":false 
-    }
-  ]
-
+    "tecnologias": [
+      "/assets/img/lenguajes_marcas/html-5.png",
+      "/assets/img/lenguajes_marcas/css.png"
+    ],
+    "descripcion": "Pequeña landing page sobre un gimnasio. Este fue uno de mis primeros proyectos que no lo he terminado por falta de tiempo.",
+    "endesarrollo": true,
+    "fullwidth": false
+  },
+  {
+    "nombre": "3D design with GSAP",
+    "links": {
+      "web": "https://mario-cubes.onrender.com/",
+      "github": ""
+    },
+    "tecnologias": [
+      "/assets/img/lenguajes_marcas/html-5.png",
+      "/assets/img/lenguajes_marcas/css.png",
+      "/assets/img/frameworks_librerias/iconGsap.webp"
+    ],
+    "descripcion": "Pequeño proyecto personal para practicar el framework GSAP, un framework para JavaScript de animaciones. ",
+    "endesarrollo": false,
+    "fullwidth": false
+  },
+  {
+    "nombre": "Login",
+    "links": {
+      "web": "https://first-login.onrender.com",
+      "github": "https://github.com/usuario/spartagym"
+    },
+    "tecnologias": [
+      "/assets/img/lenguajes_marcas/html-5.png",
+      "/assets/img/lenguajes_marcas/css.png",
+      "/assets/img/lenguajes_programacion/php.png"
+    ],
+    "descripcion": "Pequeño proyecto que hemos realizado en clase donde he querido darle un toque de diseño, se basa en el envio de información de un login con php puro. Recomiendo entrar directamente porque el login desde el iframe no funciona por temas de seguridad",
+    "endesarrollo": true,
+    "fullwidth": true
+  }
+]
