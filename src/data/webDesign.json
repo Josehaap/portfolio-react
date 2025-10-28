@@ -32,7 +32,7 @@
     "nombre": "Login",
     "links": {
       "web": "https://first-login.onrender.com",
-      "github": "https://github.com/usuario/spartagym"
+      "github": ""
     },
     "tecnologias": [
       "/assets/img/lenguajes_marcas/html-5.png",
@@ -42,5 +42,19 @@
     "descripcion": "Pequeño proyecto que hemos realizado en clase donde he querido darle un toque de diseño, se basa en el envio de información de un login con php puro. Recomiendo entrar directamente porque el login desde el iframe no funciona por temas de seguridad",
     "endesarrollo": true,
     "fullwidth": true
+  },
+  {
+    "nombre": "Smash Burger",
+    "links": {
+      "web": "https://smashburger-com.onrender.com/",
+      "github": "https://github.com/usuario/spartagym"
+    },
+    "tecnologias": [
+      "/assets/img/lenguajes_marcas/html-5.png",
+      "/assets/img/lenguajes_marcas/css.png"
+    ],
+    "descripcion": "Primer proyecto web una demostración de css aunque ahora quieo implementar algunos frameworks y duncionalidades para desarrollar una app web",
+    "endesarrollo": true,
+    "fullwidth": false
   }
 ]
