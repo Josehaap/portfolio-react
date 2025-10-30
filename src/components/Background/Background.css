@@ -1,0 +1,20 @@
+section.containerBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+.contenedorParticulas{
+    width: inherit;
+    height: inherit;
+    position: relative;
+    perspective: 100px;
+    background-color: aqua;
+}
+span.particulas{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}

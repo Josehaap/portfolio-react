@@ -1,12 +1,21 @@
-import React from 'react'; 
-const Background =   ({ children }) =>{
+import React from "react";
+import "./Background.css";
+import { useEffect } from "react";
+import { getandCreateparticles } from "./BackgroundAnimation.js";
+const Background = () => {
+   useEffect(() => {
+    getandCreateparticles(); 
+    
+  }, []);
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
-      <div style={{ position: "relative", zIndex: 1, background:"red" }}>
-            {children}
-      </div>
-    </div>
+    <>
+      <section className="containerBackground">
+        <></>
+        <div className="contenedorParticulas">
+        </div>
+      </section>
+    </>
   );
-}
+};
 
 export default Background;

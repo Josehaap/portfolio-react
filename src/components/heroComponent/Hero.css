@@ -9,7 +9,7 @@
     grid-template-rows: repeat(10, minmax(0, 1fr));
     box-shadow: 0 0 50px 25px var(--secondary);
     border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+   background: linear-gradient(135deg, var(--primary), var(--accent));
     animation:  borderRotate 9s ease infinite;
 }
 @keyframes borderRotate {
