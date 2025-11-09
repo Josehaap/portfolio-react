@@ -28,7 +28,7 @@ const Portfolio =   () =>{
          <SectionCard infoCard={infoWebsData}></SectionCard>
          <Element3D tip="cubo"></Element3D>
          <Background></Background>
-
+        <Hero titulo={"pepe"}  subtitulo={"jkwnejnw"} images={[ html,css , js, angular]} descripcion={infoPersonalData.descripcion} tecnologiasInfo={redesSociales} bool={true}></Hero>
     </>
    
   );

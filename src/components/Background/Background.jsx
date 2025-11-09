@@ -2,7 +2,9 @@ import React from "react";
 import "./Background.css";
 import { useEffect } from "react";
 import { getandCreateparticles } from "./BackgroundAnimation.js";
-const Background = () => {
+
+
+const Background = ({childre}) => {
    useEffect(() => {
     getandCreateparticles(); 
     
@@ -12,6 +14,7 @@ const Background = () => {
       <section className="containerBackground">
         <></>
         <div className="contenedorParticulas">
+          {childre}
         </div>
       </section>
     </>
