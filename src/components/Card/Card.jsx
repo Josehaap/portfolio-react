@@ -14,7 +14,7 @@ const SectionCard = ({ infoCard }) => {
         start: "top 90%",
         end: "40% 10%",
         scrub: true,
-        markers: true,
+       // markers: true,
       },
     });
     tl.from(cards, { opacity: 0 }).to(cards, {
