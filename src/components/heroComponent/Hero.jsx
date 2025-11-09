@@ -33,7 +33,7 @@ const Hero = ({
       { x: 0, opacity: 1, duration: 0.6 }
     );
 
-    tl.to(icons, { opacity: 1, duration: 0.4, stagger: 0.15 }, "-=0.3");
+    tl.to(icons, { opacity: 1, duration: 1, stagger: 0.2 }, "+=0");
 
     tl.fromTo(texts[0], { opacity: 0 }, { opacity: 1, duration: 0.8 }, "+=0");
 
@@ -48,11 +48,11 @@ const Hero = ({
         x: () => randomBetween(-150, 150),
         y: () => randomBetween(-150, 150),
         opacity: 0,
-        duration: 1,
-        stagger: 0.04,
+        duration: 0.5,
+        stagger: 0.1,
         ease: "power2.out",
       },
-      "-=1"
+      "-=3"
     );
 
     tl.fromTo(
@@ -61,6 +61,7 @@ const Hero = ({
       { y: 0, opacity: 1, duration: 0.6 },
       "-=0.4"
     );
+
     const splitspan = new SplitText(texts[3], { type: "chars, words" });
 
     tl.fromTo(
@@ -69,6 +70,29 @@ const Hero = ({
       { x: 0, opacity: 1, duration: 0.9, stagger: 0.3, repeat: -1, yoyo: true },
       "-=0.4"
     );
+
+    split.chars.forEach((char) => {
+      char.addEventListener("mouseenter", () => {
+        gsap.from(char, {
+          color: "#664069ff",
+          x: () => gsap.utils.random(-50, 50),
+          y: () => gsap.utils.random(-50, 50),
+          duration: 0.9,
+          scale: 3,
+        });
+      });
+
+      char.addEventListener("mouseleave", () => {
+        gsap.to(char, {
+          duration: 0.2,
+          delay: 1,
+          x: 0,
+          y: 0,
+          scale: 1,
+          ease: "rough({ strength: 1, points: 20, template: none, taper: 'both', randomize: true})",
+        });
+      });
+    });
   }, []);
 
   return (
