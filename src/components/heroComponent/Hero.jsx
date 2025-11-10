@@ -30,31 +30,38 @@ const Hero = ({
     tl.fromTo(
       ".contenedorLogo",
       { x: -100, opacity: 0 },
-      { x: 0, opacity: 1, duration: 0.6 }
+      { x: 0, opacity: 1, duration: 0.5 }
     );
 
-    tl.to(icons, { opacity: 1, duration: 1, stagger: 0.2 }, "+=0");
+    tl.to(icons, { opacity: 1, duration: 0.5, stagger: 0.01 , ease:"power1.out"}, "+=0");
 
-    tl.fromTo(texts[0], { opacity: 0 }, { opacity: 1, duration: 0.8 }, "+=0");
+    tl.fromTo(texts[0], { opacity: 0 }, { opacity: 1, duration: 1 }, "+=0");
 
-    function randomBetween(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
-    const split = new SplitText([texts[1], texts[2]], { type: "chars, words" });
+    const split = new SplitText(texts[1], { type: "chars, words" });
     tl.from(
       split.chars,
       {
-        x: () => randomBetween(-150, 150),
-        y: () => randomBetween(-150, 150),
+        x: () => gsap.utils.random(-50, 50),
+        y: () => gsap.utils.random(-50, 50),
         opacity: 0,
-        duration: 0.5,
-        stagger: 0.1,
+        duration: 0.3,
+        stagger: 0.05,
         ease: "power2.out",
       },
-      "-=3"
+      "-=1"
     );
+    const splitsp = new SplitText(texts[2], { type: "chars, words" });
 
+    tl.fromTo(
+      splitsp.chars,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      },
+      "+=0"
+    );
     tl.fromTo(
       contenedorBottons.current,
       { y: 50, opacity: 0 },
@@ -71,14 +78,14 @@ const Hero = ({
       "-=0.4"
     );
 
-    split.chars.forEach((char) => {
+    [...split.chars, ...splitsp.chars].forEach((char) => {
       char.addEventListener("mouseenter", () => {
         gsap.from(char, {
           color: "#664069ff",
-          x: () => gsap.utils.random(-50, 50),
-          y: () => gsap.utils.random(-50, 50),
+          x: () => gsap.utils.random(-25, 25),
+          y: () => gsap.utils.random(-25, 25),
           duration: 0.9,
-          scale: 3,
+          scale: 1.8,
         });
       });
 
